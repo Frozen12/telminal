@@ -1,13 +1,11 @@
 import asyncio
 import json
-
-from telminal import PACKAGE_PATH
 from telminal import Telminal
 
 
 async def amain():
     try:
-        with open(PACKAGE_PATH / "config.json", encoding="utf-8") as file:
+        with open( /app / "config.json", encoding="utf-8") as file:
             config = json.load(file)
     except FileNotFoundError:
         config = {
